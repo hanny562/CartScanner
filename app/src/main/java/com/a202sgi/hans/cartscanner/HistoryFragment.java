@@ -62,8 +62,8 @@ public class HistoryFragment extends Fragment {
                         .setMessage("Do you want to remove all the records?")
                         .setCancelable(false)
                         .setPositiveButton("Confirm",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface d1, int id) {
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface d1, int id) {
                                         dbread = new SQLController(getContext());
                                         dbread.open();
                                         dbread.deleteAll();
